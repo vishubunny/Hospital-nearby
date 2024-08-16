@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#list-section">List</a></li>
+                <li><a href="#detailed-info-section">Detailed Info</a></li>
+                <li><a href="#map-section">Map</a></li>
+                <li><a href="#about-section">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home-section">
+        <h1>Health Help Nearby</h1>
+        <button id="findHospitalsBtn">Find Hospitals Near Me</button>
+        <p id="status">Click the button to find hospitals near you.</p>
+    </section>
+
+    <!-- Hospital List Section -->
+    <section id="list-section">
+        <h2>Hospitals within 5km Radius:</h2>
+        <ul id="hospitalList"></ul>
+    </section>
+
+    <!-- Detailed Info Section -->
+    <section id="detailed-info-section">
+        <h2>Hospital Details</h2>
+        <table id="hospitalTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Distance (km)</th>
+                    <th>Type</th>
+                    <th>Address</th>
+                    <th>Contact Info</th>
+                    <th>Services</th>
+                    <th>Operating Hours</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Hospital data will be populated here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+        <h2>Map of Hospitals Near You</h2>
+        <div id="mapContainer" style="height: 400px;"></div>
+        <p id="mapStatus">Loading map...</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section">
+        <h2>About Hospital Finder</h2>
+        <p>Hospital Finder is a web application designed to help you locate hospitals near your current location within a 5km radius. The app uses geolocation to find your position and displays the nearest hospitals on a map.</p>
+        <p>Developed by: Vishal Kumar </p>
+        <p>Contact:</p>
+        <ul>
+            <li>GitHub: <a href="https://github.com/vishubunny">github</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/vishal-kumar-797911264/">linkedin</a></li>
+            <li>Email: <a href="vishalkumar1856@gmail.com">email</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 Hospital Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
