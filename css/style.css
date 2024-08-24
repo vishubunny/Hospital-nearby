@@ -8,6 +8,7 @@ body {
     text-align: center;
 }
 
+/* Header Styling */
 header {
     background-color: #34495e;
     color: white;
@@ -24,11 +25,14 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 25px;
+    margin: 10px 15px;
 }
 
 nav ul li a {
@@ -45,6 +49,105 @@ nav ul li a:hover {
     transform: translateY(-3px);
 }
 
+/* Homepage Background and Text Styling */
+#home {
+    background-image: url('Images/Home2.jpg');
+    background-size: 1700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 380px 300px; /* Adjust padding as needed */
+}
+.small {
+    font-size: 30px;
+    font-family: cursive;
+    color: #34495e;
+    text-align: right;
+    margin-left: 550px; /* Add some margin to the right */
+    margin-top: -1000px;
+    margin-bottom: 600px;
+}
+
+.large {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #34495e;
+    text-align: right;
+    margin-left: 500px; /* Add some margin to the right */
+    margin-top: -1000px;
+    margin-bottom: 500px;
+}
+
+#about {
+    background-image: url('Images/last2.jpg');
+    background-size: 1700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 200px; /* Adjust padding as needed */
+}
+
+#map-section {
+    background-image: url('Images/middle.jpg');
+    background-size: 1700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 150px; /* Adjust padding as needed */
+}
+#list {
+    background-image: url('Images/middle3.jpg');
+    background-size: 2050px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 150px; /* Adjust padding as needed */
+}
+
+#detailed-info-section {
+    background-image: url('Images/middle4.jpg');
+    background-size: 2000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:100px 150px ; /* Adjust padding as needed */
+}
+
+h2 {
+    font-size: 35px;
+    color: #34495e;
+    text-decoration: underline;
+}
+
+#home p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: right;
+    margin-left: 200px;
+    margin: 70px auto;
+    color: #555;
+}
+
+
+#findHospitalsBtn {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 60px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute; /* Allows precise positioning within the section */
+    right: 340px; /* Adjust the value to move the button further right */
+    top: 76%; /* Center the button vertically within the section */
+    transform: translateY(-40%); /* Correct centering offset */
+
+}
+
+#findHospitalsBtn:hover {
+    background-color: #16a085;
+    transform: translateY(-3px);
+}
+
 section {
     padding: 120px 20px 40px 20px;
     margin-top: 60px;
@@ -54,50 +157,7 @@ section {
     text-align: center;
 }
 
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #34495e;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.2rem;
-    border-bottom: 2px solid #34495e;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #555;
-}
-
-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    background-color: #34495e;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    margin-top: 25px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background-color: #1abc9c;
-    transform: translateY(-3px);
-}
-
+/* Hospital List and Details Styling */
 #hospitalList, #mapContainer {
     margin-top: 40px;
 }
@@ -123,20 +183,6 @@ ul#hospitalList li {
 ul#hospitalList li:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Map Section Styling */
-#mapContainer {
-    height: 500px;
-    margin: 40px auto;
-    border-radius: 15px;
-    border: 2px solid #34495e;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-#mapStatus {
-    display: none; /* Hide the loading map text */
 }
 
 table {
@@ -169,6 +215,20 @@ tbody tr:hover {
     background-color: #eaf2f8;
 }
 
+/* Map Section Styling */
+#mapContainer {
+    height: 500px;
+    margin: 40px auto;
+    border-radius: 15px;
+    border: 2px solid #34495e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#mapStatus {
+    display: none; /* Hide the loading map text */
+}
+
 footer {
     background-color: #34495e;
     color: white;
@@ -198,23 +258,131 @@ footer ul li a:hover {
     color: #1abc9c;
 }
 
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+/* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    #home {
+        background-size: cover;
+        padding: 20% 5%; /* Adjust padding to ensure the background fits well */
     }
+
+    .small, .large {
+        text-align: center;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    #findHospitalsBtn {
+        right: 10px; /* Move the button closer to the center */
+        top: 70%; /* Adjust the vertical position */
+        transform: none; /* Remove transform for better alignment */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
     section {
-        padding: 140px 15px 30px 15px;
+        padding: 100px 15px 30px 15px;
     }
-    table, ul#hospitalList {
-        width: 100%;
+
+    #home {
+        padding: 30% 5%; /* Further adjust padding for smaller screens */
     }
-    button {
-        width: 100%;
-        font-size: 20px;
-        padding: 20px;
+
+    .small, .large {
+        font-size: 24px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
     }
+
+    #findHospitalsBtn {
+        width: 90%; /* Make the button width responsive */
+        right: 5%;
+        left: 5%;
+        top: 60%;
+    }
+
     #mapContainer {
         height: 350px; /* Adjust height for smaller screens */
     }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #home {
+        padding: 40% 5%; /* Further adjust padding for smaller screens */
+    }
+
+    .small, .large {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #findHospitalsBtn {
+        font-size: 18px;
+        padding: 15px;
+        right: 5%;
+        left: 5%;
+        top: 50%;
+    }
+    
+    #mapContainer {
+        height: 300px; /* Further adjust height for smaller screens */
+    }
+    
+    th, td {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #home {
+        padding: 50% 5%; /* Final adjustment for very small screens */
+    }
+
+    .small, .large {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #findHospitalsBtn {
+        font-size: 16px;
+        padding: 10px;
+        right: 5%;
+        left: 5%;
+        top: 40%;
+    }
+}
+
+/* Leaflet Overlay Pane Update */
+.leaflet-overlay-pane svg {
+    -webkit-user-select: none; /* Safari 3+, Chrome 54+, Chrome Android 54+ */
+    user-select: none; /* Chrome 54+, Edge 79+, Opera, etc. */
 }
