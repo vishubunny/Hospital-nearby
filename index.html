@@ -13,24 +13,28 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home-section">Home</a></li>
-                <li><a href="#list-section">List</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#list">List</a></li>
                 <li><a href="#detailed-info-section">Detailed Info</a></li>
                 <li><a href="#map-section">Map</a></li>
-                <li><a href="#about-section">About</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Home Section -->
-    <section id="home-section">
-        <h1>Health Help Nearby</h1>
+    <section id="home">
+        <h1>
+        <span class="small">Welcome to, </span> 
+        <br>
+        <span class="large">"FAST REVIVAL" </span>
+        </h1>
         <button id="findHospitalsBtn">Find Hospitals Near Me</button>
         <p id="status">Click the button to find hospitals near you.</p>
     </section>
 
     <!-- Hospital List Section -->
-    <section id="list-section">
+    <section id="list">
         <h2>Hospitals within 5km Radius:</h2>
         <ul id="hospitalList"></ul>
     </section>
@@ -65,9 +69,13 @@
     </section>
 
     <!-- About Section -->
-        <section id="about-section">
+        <section id="about">
         <h2>About Hospital Finder</h2>
-        <p>Hospital Finder is a web application designed to help you locate hospitals near your current location within a 5km radius. The app uses geolocation to find your position and displays the nearest hospitals on a map.</p>
+        <p>Hospital Finder is a web application designed to help users quickly locate hospitals, clinics, and medical centers within a 5km radius of their current location. Utilizing modern web technologies, the application leverages geolocation to pinpoint the user's position and displays nearby healthcare facilities on an interactive map.
+
+            The application provides detailed information for each facility, including name, type, address, contact information, services offered, operating hours, and user ratings. This tool is particularly useful for individuals seeking immediate medical assistance or simply exploring healthcare options in their vicinity.
+            
+            Hospital Finder is responsive and user-friendly, ensuring a seamless experience across various devices, including smartphones, tablets, and desktops.</p>
         <p>Developed by: Vishal Kumar </p>
         <p>Contact:</p>
         <ul>
@@ -78,10 +86,12 @@
     </section>
     
     <footer>
-        <p>© 2024 Hospital Finder. All rights reserved.</p>
+        <p1>© 2024 Hospital Finder. All rights reserved.</p1>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
